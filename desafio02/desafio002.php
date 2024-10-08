@@ -23,16 +23,13 @@
         return $fib_sequence;
     }
 
-    // Função que verifica se o número pertence à sequência de Fibonacci
     function is_in_fibonacci($num) {
         $fib_sequence = fibonacci($num);
         return in_array($num, $fib_sequence);
     }
 
-    // Número a ser verificado (no caso decidi ser definido aqui no código)
     $num = 13;  
 
-    // Verifica se o número pertence à sequência de Fibonacci para imprimir resultado
     if (is_in_fibonacci($num)) {
         echo "$num pertence à sequência de Fibonacci.\n";
     } else {
