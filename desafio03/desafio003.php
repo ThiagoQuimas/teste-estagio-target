@@ -41,14 +41,14 @@
     
     $media = $soma / $diasComFaturamento;
 
-    // Conta quantos dias tiveram faturamento acima da média
+    
     foreach ($faturamentos as $dia) {
         if ($dia['valor'] > $media) {
             $diasAcimaDaMedia++;
         }
     }
 
-    // Exibe os resultados
+  
     echo "Menor valor de faturamento: R$ " . number_format($menor, 2, ',', '.') . "\n";
     echo "Maior valor de faturamento: R$ " . number_format($maior, 2, ',', '.') . "\n";
     echo "Número de dias com faturamento acima da média: $diasAcimaDaMedia\n";
